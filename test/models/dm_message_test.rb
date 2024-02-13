@@ -1,0 +1,18 @@
+# == Schema Information
+#
+# Table name: dm_messages
+#
+#  id           :bigint           not null, primary key
+#  dm_server_id :integer          not null
+#  author_id    :integer          not null
+#  body         :text             not null
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+require 'test_helper'
+
+class DmMessageTest < ActiveSupport::TestCase
+  # test "the truth" do
+  #   assert true
+  # end
+end

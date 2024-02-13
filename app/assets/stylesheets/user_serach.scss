@@ -1,0 +1,103 @@
+
+#user-search{
+  position: absolute;
+  width: 440px;
+  height: 400px;
+  background-color: rgb(55,57,62);
+  transform: translate(200px, 100px);
+  border: .5px solid rgb(20, 20, 20);
+  border-radius: 3px;
+  z-index: 10;
+}
+
+#user-search-list{
+  height: 85%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#user-search-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+#user-search-list::-webkit-scrollbar-thumb {
+  background: rgb(30, 35, 40);
+  border-radius: 5px;
+}
+
+#user-search-list::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgb(40, 45, 50)
+}
+
+#user-search-header{
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Ginto";
+  padding: 10px;
+  border-bottom: .5px solid rgb(41,43,46)
+}
+
+#user-search-exit-x{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translate(620px, 100px);
+  z-index: 12;
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+  color: rgb(151, 152, 157);
+  cursor:pointer;
+}
+
+.user-list-item{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: rgb(225,225,225);
+}
+
+.user-list-item:hover {
+  filter: brightness(90%);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: none;
+  text-overflow: ellipsis;
+}
+
+.dm-search-username {
+  padding-top: 1px;
+  padding-left: 10px;
+  padding-right: 3px;
+  color: rgb(225,225,225);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.user-name-with-tag{
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(120,120,120);
+}
+
+.createDm{
+  background-color: rgb(89, 101, 242);
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 5px;
+  border-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+

@@ -1,0 +1,149 @@
+#channel-header{
+  display: flex;
+  padding: 10px;
+}
+
+#channel-message-hashtag{
+  margin-top: 10px;
+  color: rgb(142, 146, 150);
+  padding-top: 1px;
+  padding-right: 10px;
+  font-size: 18px
+}
+
+#channel-actual-messages{
+  height: calc(100vh - 140px);
+  display: block;
+  width: calc(100vw - 534px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+// Scroll Bar for Channel Messages
+#channel-actual-messages::-webkit-scrollbar{
+  width: 10px;
+}
+
+#channel-actual-messages::-webkit-scrollbar-thumb{
+  background: rgb(30,35,40);
+  border-radius: 5px;
+}
+
+#channel-actual-messages::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgb(40,45,50);
+}
+
+#channel-name{
+  color: white;
+  font-size: 16px; 
+  font-weight: 500;
+  font-family: "Ginto";
+}
+
+#channel-messages {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  width: calc(100vw - 534px);
+  height: 100vh;
+  transform: translate(310px, 0px);
+  background-color: rgb(55, 57, 62);
+  z-index: 0;
+}
+
+
+#channel-message-footer-bar{
+  position: absolute;
+  top: 0px;
+  left: 0px;  
+  transform: translate(0px, calc(100vh - 65px));
+  height: 65px;
+}
+
+// Padding to simulate the input having internal padding
+.server-message-input-padding{
+  width: 20px;
+  color: transparent
+}
+
+#server-message-form, #dm-message-form{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: rgb(64,68,75);
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#server-message-form{
+  width: calc(100vw - 554px);
+}
+
+
+.server-message-input, .dm-message-input{
+  color: rgb(220,220,220);
+  height: 30px;
+  font-size: 16px;
+}
+
+.server-message-input{
+  width: calc(100vw - 604px);
+  color:rgb(215, 215, 215);
+}
+
+.edit-message-input{
+  width: calc(100vw - 670px);
+  min-width: 20px;
+  border: 1px solid #40444b;
+  border-radius: 5px;
+  color:rgb(215, 215, 215);
+  background-color: #40444b;
+  transform: translate(-5px, 0px);
+  padding: 0px;
+}
+
+.edit-message-input:focus{
+  outline: none;
+}
+
+.dm-message-input{
+  width: calc(100vw - 540px);
+  color:rgb(215, 215, 215);
+}
+
+.server-message-input:focus, .dm-message-input:focus{
+  outline: none;
+}
+
+.server-message-submit-button, .dm-message-submit-button{
+  outline: none;
+  background-color: transparent;
+  width: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+// Styling for paper plane submit button
+
+.fa-paper-plane{
+  color: rgb(147, 156,247)
+}
+
+.fa-paper-plane:hover{
+  filter: brightness(90%);
+}
+
+#message-placeholder{
+  float: "left";
+  clear: "both";
+  height: 5px;
+}
+
+#break-div{
+  height: 15px;
+}

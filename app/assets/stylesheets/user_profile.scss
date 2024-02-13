@@ -1,0 +1,302 @@
+#user-profile{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(56, 57, 62);
+}
+
+#user-side-nav{
+  position: absolute;
+  height: 90vh;
+  width: 25vw;
+  background-color: rgb(47,49,54);
+  display: flex; 
+  flex-direction: column;
+  align-items: end;
+  color: rgb(186, 186, 186);
+  padding-top: 10vh;
+}
+
+.user-side-nav-item{
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.user-side-nav-item:hover{
+  color: rgb(212,212,212);
+  background-color:rgb(61, 63, 68);
+}
+
+#user-side-nav-list a{
+  text-decoration: none;
+  color: rgb(186, 186, 186)
+}
+
+.fa-arrow-right {
+  background-color: rgb(186, 186, 186);
+  color: rgb(56, 57, 62);
+  position: relative;
+  transform: translate(75px, 0px);
+}
+
+#user-exit-x{
+  display: flex;
+  width: 30px; 
+  height: 30px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(186,186,186);
+  color: white;
+  cursor: pointer;
+}
+
+#to-home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-link{
+  color: rgb(186, 186, 186);
+  font-size: 18px;
+  font-weight: bold;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid rgb(186,186,186);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#home-link:hover{
+  filter: brightness(110%);
+  background-color: rgba(56, 57, 62, .9);
+}
+
+
+
+#esc {
+  padding-top: 3px;
+  font-size: 13px;
+  color: lightgrey;
+}
+
+#user-profile-content { 
+  background-color: rgb(32, 34, 37);
+  border: 0.75px solid rgb(32, 34, 37);
+  border-radius: 3px;
+  color: lightgray;
+  width: 660px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translate(30vw, 15vh);
+}
+
+#user-profile-header{
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(30vw, calc(15vh - 65px));
+  width: 715px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#my-account{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Ginto"
+}
+
+
+#user-profile-dark-top{
+  width: 100%;
+  height: 100px;
+  background-color: rgb(20,18,10);
+}
+
+#user-top-info{
+  display: flex;
+  justify-content: left;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#user-fullname{
+  padding-top: 5px;
+  padding-left: 10px;
+  display: flex;
+  font-size: 20px;
+  font-family: "Ginto";
+  width: 195px;
+}
+
+#user-fullname h4{
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 135px;
+}
+
+#user-info {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(47, 49, 54);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#user-username, #user-email{
+  padding-left: 15px;
+}
+
+#user-username{
+  padding-bottom: 15px;
+}
+
+#actual-info{
+  display: flex;
+  color: white;
+  font-size: 16px;
+}
+
+#actual-info span{
+  color: rgb(186,186,186)
+}
+
+
+
+// Form css
+#user-update input {
+  color: rgb(225, 225, 225);
+  background-color: transparent;
+  width: 80%
+}
+
+#user-update input:focus{
+  outline: none;
+}
+
+#update-user-button {
+  text-align: center;
+  width: 135px;
+  background-color: #5865F2;
+  border: 0.75px solid #5865F2;
+  border-radius: 3px;
+  color: white;
+  height: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 5px;
+  transform: translate(185px, 0px)
+}
+
+#update-user-button:hover{
+  filter: brightness(85%);
+}
+
+#delete-user{
+  background-color: transparent;
+  color: white;
+  border: 1px solid red;
+  cursor: pointer;
+  width: 35%;
+  min-width: 160px;
+}
+
+#delete-user:hover{
+  background-color: rgb(238, 65, 65);
+  color: white;
+}
+
+#leave-buttons{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+#logout-button{
+  background-color: transparent;
+  color: rgb(225,225,225);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#logout-button:hover{
+  filter: brightness(90%)
+}
+
+#user-buttons{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-top: 25px;
+}
+
+.invading-div{
+  height: 100px;
+  width: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+  transform: translate(0px, -30px);
+  background-color: rgb(32,34,37);
+}
+
+.user-icon-profile {
+  font-size: 40px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-icon-profile i{
+  color: white;
+}
+
+// Reactivity to window changes
+
+@media only screen and (max-width: 1015px) {
+  #user-profile-content {
+    width: 330px;
+    height: 400px;
+  }
+
+  #user-profile-header {
+    width: 380px;
+  }
+
+  #update-user-button{
+    transform: translate(-135px, 40px);
+    min-width: 135px;
+  }
+
+}
+
+@media only screen and (max-width: 500px){
+    #user-profile-header {
+        width: 330px;
+  }
+}

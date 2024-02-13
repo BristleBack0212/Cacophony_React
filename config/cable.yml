@@ -1,0 +1,18 @@
+development:
+  adapter: async
+
+test:
+  adapter: async
+
+
+# Local Host Production <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+# Heroku redis://redistogo:63caf45797d40cfe10a6d8ed2ff5728d@sole.redistogo.com:10602/
+production:
+  adapter: redis
+  url: redis://redistogo:63caf45797d40cfe10a6d8ed2ff5728d@sole.redistogo.com:10602/
+  # channel_prefix: Cacophony_production
+
+# # Heroku Production
+#   production:
+#     adapter: redis
+#     url: redis://redistogo:63caf45797d40cfe10a6d8ed2ff5728d@sole.redistogo.com:10602/

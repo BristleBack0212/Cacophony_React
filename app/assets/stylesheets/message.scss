@@ -1,0 +1,187 @@
+.message-author{
+  color: white
+}
+
+.message-body{
+  color: rgb(215, 215,215);
+}
+
+.fa-pencil{
+  padding-left: 10px;
+}
+
+.server-message, #opening-dm-message {
+  padding-left: 25px; 
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: calc(100% - 35px);
+  font-size:16px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#opening-dm-message{
+  color: rgb(185, 187, 190);
+  display: block;
+  font-weight: 400;
+  padding-bottom: 25px;
+}
+
+#otheruser-name{
+  font-weight: 600;
+}
+
+.server-message:hover{
+  background-color: rgb(51,53,58);
+}
+
+.message-timestamp{
+  padding-left: 10px;
+  font-size: 12px;
+  color: rgb(114,118,125)
+}
+
+// Message Edit form
+#server-message-edit-form{
+  z-index: 0;
+  font-size: 16px;
+}
+
+// Div Locks the edit text box in place
+#message-edit{
+  position: relative;
+}
+
+.edit-controls{
+  position: relative;
+  display: flex;
+  transform: translate(0px, -5px);
+  font-size: 10px;
+  color: rgb(215,215,215);
+}
+
+
+.enter-cancel-edits{
+  display: flex;
+}
+
+// .enter-cancel-edits span{
+//   color: rgb(33,152,210); 
+// }
+
+// .enter-cancel-edits p{
+//   padding-right: 7px;
+// }
+
+.escape-button, .edit-button {
+  font-size: 10px;
+  color: rgb(40, 152, 220);
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  padding-left: 3px;
+}
+
+.enter-cancel-edits button:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fa-circle{
+  font-size: 4px;
+}
+
+.circle-container{
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.delete-message{
+  // padding-left: 15px;
+  color: rgb(238, 65, 65);
+  border-top: .15px solid lightgray
+}
+
+.delete-message:hover{
+  color: white;
+  background-color: rgb(238, 65, 65);
+}
+
+.delete-message{
+  background-color: rgb(25, 25, 25);
+  width: 115px;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding-left: 5px;
+  text-align: left;
+  height: 15px;
+  border-style: none;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.edit-message-submit-button{
+  outline: none;
+  background-color: transparent;
+  width: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.message-info{
+  padding-left: 10px;
+}
+
+.message-tool-tip{
+  visibility: hidden;
+  position: relative;
+  background-color: rgb(55,57,62);
+  border: 0.5px solid rgb(25, 25, 25);
+  color: rgb(215, 215, 215);
+  width: 30px;
+  height: 30px;
+  transform: translate(-10px, -20px);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.fa-pencil{
+  padding-left: 9px;
+}
+
+.server-message:hover .message-tool-tip{
+  visibility: visible;
+}
+
+.message-tool-tip:hover {
+  filter: brightness(120%)
+}
+
+.actual-message{
+  display: flex;
+}
+
+.message-tool-tip:hover .tool-tip-within-tool-tip{
+  filter: brightness(80%);
+  visibility: visible;
+}
+
+.tool-tip-within-tool-tip{
+  visibility: hidden;
+  position: relative;
+  transform: translate(-10px, -65px);  
+  font-size: 12px;
+  width: 50px;
+  height: 30px;
+  background-color: rgb(25, 25, 28);
+  border-radius: 5px;
+  color: rgb(225, 225, 225);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Ginto";
+}
+

@@ -1,0 +1,64 @@
+
+#dm-messages {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  width: calc(100vw - 310px);
+  height: 100vh;
+  transform: translate(310px, 0px);
+  background-color: rgb(55, 57, 62);
+  z-index: -1;
+}
+
+
+
+#dm-header{
+  display: flex;
+  padding: 10px;
+  justify-content: left;
+  align-items: center;
+}
+
+#dm-header .fa-at{
+  color: rgb(142,146,150 );
+  padding-right: 10px;
+}
+
+#dm-actual-messages{
+  height: calc(100vh - 140px);
+  display: block;
+  width: calc(100vw - 310px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+// Scroll Bar for Channel Messages
+#dm-actual-messages::-webkit-scrollbar{
+  width: 10px;
+}
+
+#dm-actual-messages::-webkit-scrollbar-thumb{
+  background: rgb(30,35,40);
+  border-radius: 5px;
+}
+
+#dm-actual-messages::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgb(40,45,50);
+}
+
+#dm-message-footer-bar{
+  position: absolute;
+  top: 0px;
+  left: 0px;  
+  transform: translate(0px, calc(100vh - 65px));
+  height: 65px;
+}
+
+#dm-message-form{
+  width: calc(100vw - 350px);
+}
+
+.dm-message-input{
+  width: calc(100vw - 400px);
+}

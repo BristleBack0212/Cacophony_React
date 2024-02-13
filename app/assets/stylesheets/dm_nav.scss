@@ -1,0 +1,66 @@
+
+
+#dm-nav{
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  height: calc(100vh - 50px);
+  background-color: rgb(47, 49, 54);
+  width: 225px;
+  padding-left: 5px;
+  padding-right: 5px;
+  transform: translate(75px, 0px);
+  z-index: 2;
+}
+
+
+#simiulate-nav-bar{
+  height: 50px;
+  width: 225px;
+}
+
+// Styling for Links to Dm Servers 
+
+#dm-nav-list{
+  height: 84%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#dm-nav-list::-webkit-scrollbar {
+    width: 5px;
+}
+  
+#dm-nav-list::-webkit-scrollbar-thumb {
+    background: rgb(30, 35, 40);
+    border-radius: 5px;
+}
+  
+  #dm-nav-list::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgb(40, 45, 50)
+}
+
+#dm-nav-list a {
+  border-radius: 5px;
+  text-decoration: none;
+  color: rgb(151, 152, 157);
+}
+
+.dm-member-item {
+  display: flex;
+  padding-top: 7.5px;
+  padding-left: 15px;
+  padding-bottom: 7.5px;
+  border-radius: 5px;
+}
+
+.dm-member-item:hover{
+  background-color: rgb(58, 60, 67);
+}
+
+.selected-dm {
+  background-color: rgb(58, 60, 67);
+  color: white;
+}

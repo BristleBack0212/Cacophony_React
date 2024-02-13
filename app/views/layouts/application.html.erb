@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cacophony</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <script src="https://kit.fontawesome.com/b98709b670.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="<%=image_url("red_discord_favicon.png")%>">
+    <meta property="og:title" content="Cacophony" />
+    <meta property='og:image' content="<%= image_url('readme_splash.png')%>"/>
+    <meta property="og:description"
+      content="Cacophony is a Fullstack clone of the text portion of Discord. 
+      It allows a user to make an account 
+      in order to live message other users both in servers' channels as 
+      well as through direct messages."
+    />
+    <meta property="og:url"
+      content="https://cacophony-1.herokuapp.com/#/"
+    />
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

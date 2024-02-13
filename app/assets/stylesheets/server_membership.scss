@@ -1,0 +1,105 @@
+
+#server-member-show{
+  position: absolute;
+  width: 225px; 
+  height: 100vh;
+  background-color: rgb(48, 49, 54);
+  color:rgb(150, 150, 150);
+  top: 0px;
+  left: 0px;
+  transform: translate(calc(100vw - 225px), 0px);
+  z-index: -1;
+}
+
+#mimic-nav-bar{
+  width: 225px;
+  height: 50px;
+  background-color: rgb(56,57,62);
+}
+
+.member-title{
+  padding-left: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Ginto"
+}
+
+.server-member-item {
+  display: flex;
+  padding-top: 15px;
+  padding-left: 15px;
+  font-weight: 500;
+}
+
+.user-icon{
+  font-size: 18px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.message-icon{
+  font-size: 20px;
+  height: 35px;
+  width: 35px;
+  min-width: 35px;
+  min-height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.user-icon i{
+  padding-top: 6px;
+  padding-left: 3.5px;
+  color: white;
+}
+
+.member-username{
+  padding-left: 10px;
+  padding-top: 3px;
+}
+
+// Colors for Discord Icons
+
+.color-1{
+  background-color: rgb(237,66,69);
+}
+
+.color-2{
+  background-color: rgb(89,101,242)
+}
+
+.color-3{
+  background-color: rgb(117,126,138)
+}
+
+.color-4{
+  background-color: rgb(250,166,25);
+}
+
+.color-5{
+  background-color: rgb(60, 165, 92);
+}
+
+
+#server-members-list{
+  overflow-y: auto;
+  height: calc(100vh - 80px)
+}
+
+#server-members-list::-webkit-scrollbar {
+  width: 7.5px;
+}
+
+#server-members-list::-webkit-scrollbar-thumb {
+  background: rgb(30, 35, 40);
+  border-radius: 5px;
+}
+
+#server-members-list::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgb(40, 45, 50);
+}
